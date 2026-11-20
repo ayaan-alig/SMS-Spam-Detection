@@ -1,29 +1,35 @@
 
 # SMS Spam Detection System Using NLP and Machine Learning
 
+## Live Application
+
+**Try the application here:**
+
+https://ayaan-sms-spam-detector.streamlit.app
+
 ## Project Overview
 
 The SMS Spam Detection System is an intelligent text classification application developed using Natural Language Processing (NLP) and Machine Learning.
 
-The system analyses SMS messages and classifies them into two categories:
+It analyses SMS messages and classifies them into two categories:
 
-- **Spam:** Unwanted or suspicious messages.
-- **Ham:** Normal and legitimate messages.
+- Spam: Unwanted or suspicious messages.
+- Ham: Normal and legitimate messages.
 
-The application uses TF-IDF for text feature extraction and Multinomial Naive Bayes for classification.
+The system uses TF-IDF for text feature extraction and Multinomial Naive Bayes for classification.
 
 ## Project Domain
 
-**Domain 6 – NLP Applications**
+Domain 6 – NLP Applications
 
 ## Objectives
 
-- To develop an intelligent SMS spam detection system.
-- To preprocess and analyse text messages.
-- To extract important text features using TF-IDF.
-- To train a machine learning classification model.
-- To classify messages as Spam or Ham.
-- To develop an interactive web application.
+- Develop an intelligent SMS spam detection system.
+- Process and analyse text messages.
+- Extract text features using TF-IDF.
+- Train a Machine Learning classification model.
+- Classify SMS messages as Spam or Ham.
+- Build an interactive web application.
 
 ## Technologies Used
 
@@ -32,41 +38,40 @@ The application uses TF-IDF for text feature extraction and Multinomial Naive Ba
 | Python | Programming Language |
 | Pandas | Dataset Handling |
 | Scikit-learn | Machine Learning |
-| TF-IDF | Text Feature Extraction |
-| Multinomial Naive Bayes | Classification Algorithm |
+| TF-IDF | Feature Extraction |
+| Multinomial Naive Bayes | Classification |
 | Streamlit | Web Application |
-| Matplotlib | Data Visualization |
+| Matplotlib | Visualization |
 | Seaborn | Confusion Matrix |
 
 ## Dataset
 
-**UCI SMS Spam Collection Dataset**
+UCI SMS Spam Collection Dataset
+
+Dataset Source:
+https://archive.ics.uci.edu/dataset/228/sms+spam+collection
 
 The dataset contains 5,574 labelled SMS messages.
-
-- Ham: Legitimate messages
-- Spam: Unwanted messages
-
-Dataset Source: https://archive.ics.uci.edu/dataset/228/sms+spam+collection
 
 ## System Workflow
 
 1. Dataset Collection
-2. Data Loading and Preprocessing
-3. Text Feature Extraction using TF-IDF
-4. Training and Testing Data Split
-5. Model Training using Multinomial Naive Bayes
-6. Model Evaluation
-7. SMS Classification through Streamlit
+2. Data Loading
+3. Text Preprocessing
+4. TF-IDF Feature Extraction
+5. Training and Testing Split
+6. Model Training
+7. Model Evaluation
+8. SMS Classification
 
-## Project Features
+## Application Features
 
-- User-friendly interface
-- SMS message input
-- Spam and Ham classification
-- Machine Learning-based prediction
-- Prediction probability display
-- Model evaluation using performance metrics
+- Interactive web interface.
+- SMS message input.
+- Spam and Ham classification.
+- Machine Learning-based predictions.
+- Example SMS messages.
+- Prediction result display.
 
 ## Project Structure
 
@@ -85,31 +90,25 @@ SMS-Spam-Detection/
 
 ## Installation and Execution
 
-### 1. Clone the repository
+### 1. Clone Repository
 
 ```bash
 git clone https://github.com/ayaan-alig/SMS-Spam-Detection.git
 ```
 
-### 2. Open the project folder
-
-```bash
-cd SMS-Spam-Detection
-```
-
-### 3. Install dependencies
+### 2. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Train the Machine Learning model
+### 3. Train the Model
 
 ```bash
 python train_model.py
 ```
 
-### 5. Run the application
+### 4. Run the Application
 
 ```bash
 streamlit run app.py
@@ -125,20 +124,18 @@ The model is evaluated using:
 - F1-Score
 - Confusion Matrix
 
-Actual evaluation results are generated during model training.
-
 ## Limitations
 
-- Predictions depend on patterns learned from the training dataset.
-- Unseen or unusual messages may be misclassified.
-- The model may not identify every new type of spam message.
+- Unseen messages may be misclassified.
+- Predictions depend on the training dataset.
+- New spam patterns may require model retraining.
 
 ## Future Scope
 
 - Support for multiple languages.
 - Improved text preprocessing.
-- Comparison with additional classification algorithms.
-- Integration with real-time SMS filtering systems.
+- Comparison with additional ML algorithms.
+- Integration with real-time SMS filtering.
 
 ## Academic Information
 
@@ -148,7 +145,7 @@ Actual evaluation results are generated during model training.
 
 **Assignment:** Intelligent Software Development
 
-**Project:** SMS Spam Detection System Using NLP and Machine Learning
+**Project:** SMS Spam Detection System
 
 **Academic Year:** 2026–2027
 
